@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;in.txt&apos; to &apos;course_poo_VII_work_with_files_example_II&apos;&#x0A;- Original project: &apos;course_poo_VII_work_with_files_example_I&apos;&#x0A;- Destination element: &apos;course_poo_VII_work_with_files_example_II&apos;&#x0A;- Original element: &apos;in.txt&apos;" description="Copy file" destination="=course_poo_VII_work_with_files_example_II" element1="in.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1783185524588" units="0" version="1.0"/>
+</session>

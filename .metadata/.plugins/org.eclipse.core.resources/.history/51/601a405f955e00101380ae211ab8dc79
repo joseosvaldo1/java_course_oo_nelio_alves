@@ -1,0 +1,449 @@
+package programming_course;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+//		System.out.println("Hello world");
+//		System.out.println("Good morning");
+		
+//		System.out.print("Hello world");
+//		System.out.println("Good morning");
+	
+		///////////////////////////////////////
+		
+//		int y = 32;
+//		double x = 10.35784;
+//		System.out.println(y);                 // => 32
+//		System.out.println(x);				   // => 10.35784
+//		System.out.println("Good morning");    // => Good morning
+		
+		///////////////////////////////////////////////////////////////////////////
+
+//		double x = 10.35784;
+//		System.out.printf("%.2f%n", x);		   // => 10,36
+//		System.out.printf("%.4f%n", x);		   // => 10,3578
+//		Note: Line break in Java is indicated as %n or \n
+		
+		///////////////////////////////////////////////////////////////////////////
+		
+//		Locale.setDefault(Locale.US);
+//		double x = 10.35784;
+//		System.out.printf("%.2f%n", x);		   // => 10.36
+//		System.out.printf("%.4f%n", x);		   // => 10.3578
+//		
+//		// Concatenation:
+//		
+//		System.out.println("RESULT = " + x + " meters");  // => RESULT = 
+//														  //    10.35784 meters
+//		
+//		// Interpolation:
+//		
+//		System.out.printf("RESULT = %.2f meters%n", x);  // => RESULT = 10.36 meters
+		
+		///////////////////////////////////////////////////////////////////////////
+
+//		Locale.setDefault(Locale.US);
+//		String name = "Maria";
+//		int age = 31;
+//		double income = 4000.00;
+//		
+//		System.out.printf("%s is %d years-old and earns R$ %.2f reais.", 
+//				name, age, income); // => Maria is 31 years-old and earns R$ 4000.00 reais.
+		
+		
+//		Markers in Java:
+//		%f => floating point
+//		%d => Integers
+//		%s => Strings (text)
+//		%n => Line break
+		
+		///////////////////////////////////////////////////////////////////////////
+	
+		// Data processing in Java:
+//		Example_1:
+//		int x, y;
+//		x = 5;
+//		y = 2*x;
+//		
+//		System.out.println(x); // => 5
+//		System.out.println(y); // => 10
+		
+//		Example_2:
+//		int x;
+//		double y;
+//		
+//		x = 5;
+//		y = 2*x;
+//		
+//		System.out.println(x); // => 5
+//		System.out.println(y); // => 10.0
+		
+//		Example_3
+//		double b, B, h, area;
+//		b = 6.0;
+//		B = 8.0;
+//		h = 5.0;
+//		
+//		area = (B+b) / 2.0*h;
+//				
+//		System.out.println(area); // => 35.0
+		
+//  	Example_4:
+//		int a,b;
+//		double result;
+//		
+//		a = 5;
+//		b = 2;
+//		
+//// //	result = a / b;
+//
+//// //	System.out.println(result); // => 2.0
+//		
+//		result = (double) a / b;
+//		
+//		System.out.println(result); // => 2.5
+		
+//		Example_5:
+//		double a;
+//		int b;
+//		
+//		a = 5.0;
+//		b = (int) a;
+//		
+//		System.out.println(b);  // => 5
+			
+
+		///////////////////////////////////////////////////////////////////////////
+//		Data Entry in Java:
+		
+		// To read a word (text without spaces) - method next():
+//		Scanner sc = new Scanner(System.in);
+//		
+//		String x;
+//		x = sc.next();
+//		
+//		System.out.println("You typed: " + x);
+//
+//		sc.close();
+		
+		///////////////////////////////////////////////////////////////////////////
+		
+//		To read an integer number - method nextInt():
+//		Scanner sc = new Scanner(System.in);
+//		
+//		int x;
+//		x = sc.nextInt();
+//		
+//		System.out.println("You typed: " + x);
+//
+//		sc.close();
+		
+		///////////////////////////////////////////////////////////////////////////
+		
+//		To read a floating point number - method nextDouble():
+//		Locale.setDefault(Locale.US);
+//		Scanner sc = new Scanner(System.in);
+//		
+//		double x;
+//		x = sc.nextDouble();
+//		
+//		System.out.printf("You typed: %.2f%n", x);
+//
+//		sc.close();
+		
+		///////////////////////////////////////////////////////////////////////////
+		
+//		To read a single character - method next().charAt(0);
+//		Scanner sc = new Scanner(System.in);
+//		
+//		char x;
+//		x = sc.next().charAt(0);
+//		
+////	System.out.printf("You typed: %s%n", x);
+//		System.out.println("You typed: " + x);
+//
+//		sc.close();
+		
+		
+		///////////////////////////////////////////////////////////////////////////
+		
+//		To read multiple data in the same row:
+//		Scanner sc = new Scanner(System.in);
+//		
+//		String x;
+//		int y;
+//		double z;
+//		
+//		x = sc.next();
+//		y = sc.nextInt();
+//		z = sc.nextDouble();
+//		
+//		System.out.println("Data typed:");
+//		System.out.println(x);
+//		System.out.println(y);
+//		System.out.println(z);
+//		
+//
+//		sc.close();
+		
+		///////////////////////////////////////////////////////////////////////////
+		
+//		To read text until a line break:
+//		Scanner sc = new Scanner(System.in);
+//		String s1, s2, s3;
+//		
+//		s1 = sc.nextLine();
+//		s2 = sc.nextLine();
+//		s3 = sc.nextLine();
+//		
+//		System.out.println("DATA TYPED:");
+//		System.out.println(s1);
+//		System.out.println(s2);
+//		System.out.println(s3);
+//		
+//		sc.close();
+		
+		///////////////////////////////////////////////////////////////////////////
+		
+//		To read text until a line break:
+//		ATTENTION: Pending line break
+//		Scanner sc = new Scanner(System.in);
+		
+//		int x;
+//		String s1, s2, s3;
+//		
+//		
+//		x = sc.nextInt();
+//		sc.nextLine(); // To consume the line break that was pending in the previous input
+//		s1 = sc.nextLine();
+//		s2 = sc.nextLine();
+//		s3 = sc.nextLine();
+//		
+//		System.out.println("DATA TYPED:");
+//		System.out.println(x);
+//		System.out.println(s1);
+//		System.out.println(s2);
+//		System.out.println(s3);
+//		
+//		sc.close();
+
+		
+		///////////////////////////////////////////////////////////////////////////
+		
+//		double x = 3.0;
+//		double y = 4.0;
+//		double z = -5.0;
+//		double A, B, C;
+//		A = Math.sqrt(x);
+//		B = Math.sqrt(y);
+//		C = Math.sqrt(25.0);
+//		System.out.println("Raiz quadrada de " + x + " = " + A); // => Raiz quadrada de 3.0 = 1.7320508075688772
+//		System.out.println("Raiz quadrada de " + y + " = " + B); // => Raiz quadrada de 4.0 = 2.0
+//		System.out.println("Raiz quadrada de 25 = " + C);        // => Raiz quadrada de 25 = 5.0
+//		A = Math.pow(x, y);
+//		B = Math.pow(x, 2.0);
+//		C = Math.pow(5.0, 2.0);
+//		System.out.println(x + " elevado a " + y + " = " + A);   // => 3.0 elevado a 4.0 = 81.0
+//		System.out.println(x + " elevado ao quadrado = " + B);   // => 3.0 elevado ao quadrado = 9.0
+//		System.out.println("5 elevado ao quadrado = " + C);      // => 5 elevado ao quadrado = 25.0
+//		A = Math.abs(y);
+//		B = Math.abs(z);
+//		System.out.println("Valor absoluto de " + y + " = " + A); // => Valor absoluto de 4.0 = 4.0
+//		System.out.println("Valor absoluto de " + z + " = " + B); // => Valor absoluto de -5.0 = 5.0
+		
+		
+		///////////////////////////////////////////////////////////////////////////
+		
+//		int x = 5;
+//		
+//		System.out.println("Good morning!");
+//		if (x < 0) {
+//			System.out.println("Good afternoon!");
+//		}
+//		System.out.println("Good evening!");
+		
+		
+//		Scanner sc = new Scanner(System.in);
+//		int hora;
+//		
+//		System.out.println("Que horas são?");
+//		
+//		hora = sc.nextInt();
+//			
+//		if (hora < 12) {
+//			System.out.println("Good morning!");
+//		} else if (hora < 18){
+//			System.out.println("Good afternoon!");
+//		} else {
+//			System.out.println("Good evening!");
+//		}
+//		
+//		
+//		
+//		sc.close();
+		
+		///////////////////////////////////////////////////////////////////////////
+		
+//		Operadores de atribuição cumulativa:
+//		Operadores de atribuição cumulativa
+//		a += b;		a = a + b;
+//		a -= b;		a = a - b;
+//		a *= b;		a = a * b;
+//		a /= b;		a = a / b;
+//		a %= b;		a = a % b;
+		
+//		Problema exemplo:
+//		Uma operadora de telefonia cobra R$ 50.00 por um plano básico que
+//		dá direito a 100 minutos de telefone. Cada minuto que exceder a
+//		franquia de 100 minutos custa R$ 2.00. Fazer um programa para ler a
+//		quantidade de minutos que uma pessoa consumiu, daí mostrar o valor
+//		a ser pago.
+//		Entrada			Saída
+//		22				Valor a pagar: R$ 50.00
+//		Entrada			Saída
+//		103				Valor a pagar: R$ 56.00
+	
+//		
+//		Locale.setDefault(Locale.US);
+//		Scanner sc = new Scanner(System.in);
+//		int minutos = sc.nextInt();
+//		double conta = 50.0;
+//		if (minutos > 100) {
+//		conta += (minutos - 100) * 2.0;
+//		}
+//		System.out.printf("Valor da conta = R$ %.2f%n", conta);
+//		
+//		sc.close();
+
+	
+		///////////////////////////////////////////////////////////////////////////
+		
+//		Estrutura switch-case:
+//		Quando se tem várias opções de fluxo a serem tratadas com base no valor
+//		de uma variável, ao invés de várias estruturas if-else encadeadas, alguns
+//		preferem utilizar a estrutura switch-case.
+		
+//		Problema exemplo:
+//		Fazer um programa para ler um valor inteiro de 1 a 7 representando um
+//		dia da semana (sendo 1=domingo, 2=segunda, e assim por diante).
+//		Escrever na tela o dia da semana correspondente, conforme exemplos.
+//		Entrada		Saída
+//		1			Dia da semana: domingo
+//		Entrada		Saída
+//		4			Dia da semana: quarta
+//		Entrada		Saída
+//		9			Dia da semana: valor inválido
+		
+
+//		Scanner sc = new Scanner(System.in);
+//		int x = sc.nextInt();
+//		String dia;
+		
+//		1ª Forma - com encadeamento de if-else:
+//		if (x == 1) {
+//			dia = "domingo";
+//			}
+//			else if (x == 2) {
+//				dia = "segunda";
+//			}
+//			else if (x == 3) {
+//				dia = "terca";
+//			}
+//			else if (x == 4) {
+//				dia = "quarta";
+//			}
+//			else if (x == 5) {
+//				dia = "quinta";
+//			}
+//			else if (x == 6) {
+//				dia = "sexta";
+//			}
+//			else if (x == 7) {
+//				dia = "sabado";
+//			}
+//			else {
+//				dia = "valor invalido";
+//			}
+
+		/////////////////////////////////
+//			2ª Forma - com switch-case:
+			
+//		switch (x) {
+//		case 1:
+//			dia = "domingo";
+//			break;
+//		case 2:
+//			dia = "segunda";
+//			break;
+//		case 3:
+//			dia = "terca";
+//			break;
+//		case 4:
+//			dia = "quarta";
+//			break;
+//		case 5:
+//			dia = "quinta";
+//			break;
+//		case 6:
+//			dia = "sexta";
+//			break;
+//		case 7:
+//			dia = "sabado";
+//			break;
+//		default:
+//			dia = "valor invalido";
+//			break;
+//		}
+//		System.out.println("Dia da semana: " + dia);
+//			
+//			sc.close();
+		///////////////////////////////////////////////////////////////////////////
+		
+//		Expressão condicional ternária
+//		Estrutura opcional ao if-else quando se deseja decidir um VALOR com 
+//		base em uma condição.
+		
+//		Sintaxe:
+//		( condição ) ? valor_se_verdadeiro : valor_se_falso
+//		Exemplos:
+//		( 2 > 4 ) ? 50 : 80              => 80
+//		( 10 != 3 ) ? "Maria" : "Alex"   => "Maria"
+		
+//		Exemplo:
+
+//		double preco = 34.5;
+//		double desconto;
+		
+//		1ª Forma - usando um if-else comum:
+		
+//		if (preco < 20.0) {
+//			desconto = preco * 0.1;
+//		} else {
+//			desconto = preco * 0.05;
+//		}
+		
+//		System.out.printf("desconto = %.2f%n", desconto); // => desconto = 1,73
+		
+		
+//		2ª Forma - usando um operador ternário:
+		double preco = 34.5;
+		double desconto;
+		desconto = (preco < 20.0) ? preco * 0.1 : preco * 0.05;
+		
+		System.out.printf("desconto = %.2f%n", desconto); // => desconto = 1,73
+			
+		
+		///////////////////////////////////////////////////////////////////////////
+
+		
+		
+		
+		
+		///////////////////////////////////////////////////////////////////////////
+		
+	}
+
+}

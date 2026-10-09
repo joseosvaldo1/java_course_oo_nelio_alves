@@ -1,0 +1,55 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.function.Consumer;
+
+import entities.Product;
+
+public class Program {
+	public static void main(String[] args) {
+		// Consumer:
+		// Documentation: https://docs.oracle.com/javase/10/docs/api/java/util/function/Consumer.html
+		
+		// public interface Consumer<T> {
+		// 	void accept(T t);
+		// }
+		
+		
+		Locale.setDefault(Locale.US);
+		
+		List<Product> list = new ArrayList<>();
+		list.add(new Product("Tv", 900.00));
+		list.add(new Product("Mouse", 50.00));
+		list.add(new Product("Tablet", 350.50));
+		list.add(new Product("HD Case", 80.90));
+		
+		// // 1st way: Interface implementation
+		// list.forEach(new PriceUpdate());
+		
+		// // 2nd way: Reference method with static method
+		// list.forEach(Product::staticPriceUpdate);
+		
+		// // 3rd way: Reference method with non-static method
+		// list.forEach(Product::nonStaticPriceUpdate);
+		
+		// // 4th way: Declared lambda expression
+		// double factor = 1.10;
+		// Consumer<Product> consumer = p -> {
+		// 	  p.setPrice(p.getPrice() * factor);
+		// };
+		// Other way:
+		// Consumer<Product> consumer = p -> p.setPrice(p.getPrice() * factor);
+		// list.forEach(consumer);
+		
+		// // 5th way: Inline lambda expression
+		double factor = 1.10;
+		list.forEach(p -> p.setPrice(p.getPrice() * factor));
+		
+		
+		list.forEach(System.out::println);
+		
+		
+	}
+}

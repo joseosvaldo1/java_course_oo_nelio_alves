@@ -1,0 +1,18 @@
+package application;
+
+import java.util.LinkedHashSet;
+import java.util.Scanner;
+
+public class Program {
+	public static void main(String[] args) {
+		LinkedHashSet<Integer> setA = new LinkedHashSet<>();
+		LinkedHashSet<Integer> setB = new LinkedHashSet<>();
+		LinkedHashSet<Integer> setC = new LinkedHashSet<>();
+		LinkedHashSet<Integer> setU = new LinkedHashSet<>();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		sc.close();
+		
+	}
+}

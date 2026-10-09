@@ -1,0 +1,13 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import model.entitites.Product;
+
+public class Program {
+	public static void main(String[] args) {
+		List<Product> list = new ArrayList<>();
+		
+	}
+}

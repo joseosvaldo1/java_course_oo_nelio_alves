@@ -1,0 +1,48 @@
+package application;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Program {
+	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		
+//		System.out.print("Enter space-separated names for the array vect: ");
+//		String[] vect = sc.nextLine().split(" ");
+//		
+//		System.out.print("Enter an integer number for the position: ");
+//		int position = sc.nextInt();
+//		
+//		System.out.println();
+//		System.out.print("vect[" + position + "]: " + vect[position]);
+//		
+//		System.out.println("End of program.");
+		
+		/////////////////////////////////////////////////////////////////////
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		try {
+			System.out.print("Enter space-separated names for the array vect: ");
+			String[] vect = sc.nextLine().split(" ");
+		
+			System.out.print("Enter an integer number for the position: ");
+			int position = sc.nextInt();
+		
+			System.out.println();
+			System.out.print("vect[" + position + "]: " + vect[position]);
+		} 
+		catch (ArrayIndexOutOfBoundsException e){
+			System.out.println("Invalid position!");
+		} 
+		catch (InputMismatchException e){
+			System.out.println("You didn´t choose valid integer for the position!");
+		}
+		
+		
+		System.out.println("End of program.");
+		
+		sc.close();
+	}
+}

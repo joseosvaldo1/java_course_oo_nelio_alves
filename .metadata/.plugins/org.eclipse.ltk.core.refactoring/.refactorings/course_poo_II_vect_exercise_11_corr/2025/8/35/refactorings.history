@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;entities.Person&apos; to &apos;Rent&apos;&#x0A;- Original project: &apos;course_poo_II_vect_exercise_11_corrected&apos;&#x0A;- Original element: &apos;entities.Person&apos;&#x0A;- Renamed element: &apos;entities.Rent&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Person&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;entities{Person.java[Person" matchStrategy="1" name="Rent" qualified="false" references="true" similarDeclarations="false" stamp="1756306116643" textual="false" version="1.0"/>
+</session>
