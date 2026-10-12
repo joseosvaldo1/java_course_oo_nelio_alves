@@ -1,9 +1,0 @@
-package application;
-
-import java.util.Comparator;
-
-import model.entitites.Product;
-
-public class MyComparator implements Comparator<Product>{
-
-}

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy 2 packages to &apos;course_poo_V_her_polim_example_III/src&apos;&#x0A;- Original project: &apos;course_poo_V_her_polim_example_II&apos;&#x0A;- Destination element: &apos;course_poo_V_her_polim_example_III/src&apos;&#x0A;- Original elements:&#x0A;     course_poo_V_her_polim_example_II/src/application&#x0A;     course_poo_V_her_polim_example_II/src/entities" description="Copy packages" destination="=course_poo_V_her_polim_example_III/src" element1="/src&lt;application" element2="/src&lt;entities" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1761932483192" version="1.0"/>
-</session>
